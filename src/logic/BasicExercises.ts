@@ -41,5 +41,24 @@ export function ExecuteInterface(name: string, age: number) {
 }
 
 /* Exercise 5: Classes
-Create a TypeScript class called Car with properties make and model.
+Create a TypeScript class called Car with properties brand, model, color & year.
 Add a constructor that initializes these properties. Create an instance of the Car class and print its properties. */
+export class Car {
+  brand: string;
+  model: string;
+  color: string;
+  year: number;
+
+  constructor(brand: string, model: string, color: string, year: number) {
+    this.brand = brand;
+    this.model = model;
+    this.color = color;
+    this.year = year;
+  }
+
+  describe() {
+    console.log(
+      `Brand: ${this.brand}, Model: ${this.model}, Color: ${this.color}, Year: ${this.year}`
+    );
+  }
+}

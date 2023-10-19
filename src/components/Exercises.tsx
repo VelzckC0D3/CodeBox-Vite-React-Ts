@@ -1,4 +1,4 @@
-import { ExecuteInterface, Sum, TypeAnnotation, VariableDeclaration } from "../logic/BasicExercises"
+import { Car, ExecuteInterface, Sum, TypeAnnotation, VariableDeclaration } from "../logic/BasicExercises"
 
 const Exercises = () => {
 
@@ -6,6 +6,9 @@ const Exercises = () => {
   TypeAnnotation(123) /* Argument on purpose */
   Sum(145, 55)
   ExecuteInterface('Alejandro', 25)
+  const newCar = new Car('Toyota', 'Prado', 'Red', 1998)
+  console.log(newCar)
+  newCar.describe()
 
   return (
     <div className='main-cont'>
